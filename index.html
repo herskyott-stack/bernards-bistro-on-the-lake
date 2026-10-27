@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bernard&#x27;s Bistro on the Lake — Sundridge, ON | Fish &amp; Chips, Lake Bernard Patio</title>
+<meta name="description" content="Bernard&#x27;s Bistro on the Lake, 93 Main St, Sundridge ON: fish &amp; chips with home-cut fries, gluten-free options, licenced patio over Lake Bernard. Call (705) 707-3030.">
+<style>
+:root{--acc:#1d6f8e;--acctx:#fff;--ink:#233038;--bg:#f4f9fb}
+*{box-sizing:border-box}body{margin:0;font-family:Verdana,Geneva,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+.hero{background:linear-gradient(160deg,#bfe3ef,#eaf6fa);padding:2.6rem 1rem;text-align:center;border-bottom:6px solid #1d6f8e}
+h1{font-family:Georgia,serif;font-size:2.7rem;margin:.3rem 0;color:#144b61}
+.wrap{max-width:980px;margin:0 auto;padding:1.6rem 1rem 2rem}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem}@media(max-width:700px){.split{grid-template-columns:1fr}}
+.panel{background:#fff;border-radius:10px;padding:1.3rem;box-shadow:0 2px 10px #1d6f8e22}
+.panel h2{margin-top:0;font-family:Georgia,serif;color:#144b61}
+.cta{display:inline-block;background:#1d6f8e;color:#fff;padding:.8rem 1.4rem;border-radius:8px;text-decoration:none;font-weight:700}
+.foot{text-align:center;padding:1.2rem;font-size:.85rem;opacity:.75}
+
+.cform{display:grid;gap:.7rem;max-width:520px}
+.cform label{display:grid;gap:.3rem;font-size:.92rem;font-weight:600}
+.cform input,.cform select,.cform textarea{padding:.6rem .7rem;border:1px solid #0003;border-radius:8px;font:inherit;background:#fff;color:#111}
+.cform button{padding:.75rem 1rem;border:0;border-radius:8px;font:inherit;font-weight:700;cursor:pointer;background:var(--acc);color:var(--acctx,#fff)}
+.fnote{font-size:.85rem;opacity:.8}
+.fdone{font-weight:700}
+a{color:var(--acc)}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <p style="letter-spacing:.25em;font-weight:700">SUNDRIDGE · LAKE BERNARD · ONTARIO</p>
+  <h1>Bernard's Bistro on the Lake</h1>
+  <p>Sandra's kitchen: the fish &amp; chips people call the best in town, home-cut fries, and a patio over the lake.</p>
+  <p><a class="cta" href="tel:+17057073030">Call (705) 707-3030</a></p>
+  <p>Rated 4.7★ from 28 Google reviews</p>
+</div>
+<div class="wrap">
+  <div class="split">
+    <section class="panel">
+      <h2>From Sandra's kitchen</h2>
+      <ul>
+        <li><strong>Fish &amp; chips</strong> — hand-battered, home-cut fries, homemade slaw &amp; tartar</li>
+        <li><strong>Lasagna</strong> &amp; homestyle specials</li>
+        <li><strong>Chicken Caesar wraps</strong></li>
+        <li><strong>Carrot cake</strong> &amp; homemade desserts</li>
+        <li><strong>Gluten-free options</strong> available</li>
+        <li>Fully licenced</li>
+      </ul>
+    </section>
+    <section class="panel">
+      <h2>Sit by the lake</h2>
+      <p>Patio seating overlooking Lake Bernard, plus a dog-friendly side patio — bring the whole crew. Dine in or take out; reservations recommended for summer weekends.</p>
+      <h2>Hours</h2>
+      <p>Mon &amp; Tue: 10:30 – 7:00 · Wed: closed<br>Thu: 10:30 – 8:00 · Fri: 9:00 – 8:30<br>Sat: 10:30 – 8:00 · Sun: closed</p>
+      <p>93 Main St, Sundridge, ON P0A 1Z0<br><a href="https://www.facebook.com/Sundridgerestaurants">Bernard's on Facebook</a></p>
+    </section>
+  </div>
+  <section class="panel" style="margin-top:1.6rem">
+    <h2>Reservations &amp; takeout</h2>
+    
+      <form class="cform" onsubmit="event.preventDefault();var r='BBL-'+Math.floor(1000+Math.random()*9000);document.getElementById('BBLref').textContent=r;document.getElementById('BBLdone').style.display='block';this.querySelector('button').disabled=true;">
+        <label>Your name<input type="text" required autocomplete="name"></label>
+        <label>Phone<input type="tel" required autocomplete="tel"></label>
+        <label>Service<select>
+          <option>Table reservation</option>
+          <option>Takeout order</option>
+          <option>Group / event inquiry</option>
+          <option>General question</option>
+        </select></label>
+        <label>Details (optional)<textarea rows="3"></textarea></label>
+        <button type="submit">Send request</button>
+        <p class="fnote">Concept preview form — it doesn't send or store anything yet. To reach us today, please call (705) 707-3030.</p>
+        <p class="fdone" id="BBLdone" style="display:none">Reference: <strong id="BBLref"></strong> — concept only; please call to confirm.</p>
+      </form>
+  </section>
+</div>
+<footer class="foot"><p>Concept website designed for Bernard's Bistro on the Lake · Built by Jake Hersky — Ottawa web designer · hersky.info</p></footer>
+
+</body>
+</html>
